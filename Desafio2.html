@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+</head>
+<body>
+    <h1> Desafio 7 days of code</h1>
+
+    <script type="text/javascript">
+        var name = prompt ("Qual é o seu nome?");
+        for(;name == "";){
+            alert("Você esqueceu de informar seu nome. Por favor, informe-o corretamente")
+            var name = prompt ("Qual é o seu nome?");
+        }
+        //o bloco 'for" acima só funcionou quando declarei as variáveis com "var"
+
+        var age = prompt ("Qual é a sua idade?");
+        for (;age=="";){
+            alert("Você esqueceu de informar sua idade. Por favor, informe-a corretamente")
+            var age = prompt("Qual sua idade?")
+        }
+
+        var language = prompt ("Qual linguagem de programação você está aprendendo?");
+        for (;language=="";){
+            alert("Você esqueceu de informar a linguagem que está estudando. Por favor, informe-a corretamente")
+            var language = prompt("Qual linguagem de programação você está aprendendo?")
+        }
+
+        const msg =
+         ` "Olá ${name}, você tem ${age} anos e já está aprendendo ${language}!" `; //pressionar shift + simbolo da crase  para adiciona-la
+        alert (msg);
+
+        var answer = prompt(`"Você gosta de estudar ${language}? Responda '1' para Sim e '2' para não `); 
+        for(;answer == "";){
+            alert("Você esqueceu de responder à pergunta. Por favor, responda corretamente")
+            var answer = prompt(`"Você gosta de estudar ${language}? Responda '1' para Sim e '2' para não `)
+        }
+        
+        if (answer == 1 ){
+            alert ("Muito bom! Continue estudando e você terá muito sucesso!")
+        } else if (answer == 2){
+            alert ("Ahh que pena... Já tentou aprender outras linguagens?")
+        }
+        
+    </script>
+
+</body>
+</html>
+
+
+
